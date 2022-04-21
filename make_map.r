@@ -1,7 +1,8 @@
 #downloading and loading packages
 if (!require("pacman")) install.packages("pacman"); library(pacman)
 p_load(cowplot, googleway, ggplot2, ggrepel,ggspatial, sf, rnaturalearth,
- rnaturalearthdata, install = TRUE, update = getOption("pac_update"), character.only = FALSE)
+ rnaturalearthdata, install = TRUE, update = getOption("pac_update"), 
+ character.only = FALSE)
 
 
 #getting data to make world map
