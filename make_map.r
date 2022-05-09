@@ -18,5 +18,5 @@ annotate(geom = "text", x = -90, y = 26, label = "Gulf of Mexico",
 
 #hashtag makes that line of code not run (called comments)
 #uncommment this and rename it to save your map!)
-
-ggsave("gulf_of_mexico.pdf")
+#(copy and paste the path from wherever 'Github_Demo' folder is...and change '\' to '/'')
+ggsave("C:/Users/Mira Ensley-Field/OneDrive - The Gunter Group/Documents/Github/Github_Demo/gulf_of_mexico.pdf")
