@@ -15,8 +15,12 @@ wide<-as.data.frame(pivot_wider(dat, names_from = "variable"))
 write.csv(wide,paste0(dirname(current_path), "/bike_data_wide.csv"))
 
 #make a pie chart!
+
+#this pie chart includes 'other category'
+
 slices <- c(sum(wide$member_gender=="Male"), sum(wide$member_gender=="Female"), sum (wide$member_gender != "Female" & wide$member_gender != "Male"  & wide$member_gender != "" ) )
 labels <- c("male", "female", "other")
-pie(slices, labels = lbls, main="Bike riders", col= c("darkblue", "lightblue", "darkorange"))
+pie(slices, labels = labels, main="Bike riders", col= c("darkblue", "lightblue", "darkorange"))
 
+#
 
