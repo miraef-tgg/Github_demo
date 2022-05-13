@@ -11,6 +11,9 @@ dat<-dat_orig[duplicated(paste0(dat_orig$trip_id , dat_orig$variable))==FALSE,]
 #put in wide format
 wide<-as.data.frame(pivot_wider(dat, names_from = "variable"))
 
+#save new formatted data
+write.csv(wide,paste0(dirname(current_path), "/bike_data_wide.csv"))
+
 #make a pie chart!
 slices <- c(sum(wide$member_gender=="Male"), sum(wide$member_gender=="Female"), sum (wide$member_gender != "Female" & wide$member_gender != "Male"  & wide$member_gender != "" ) )
 labels <- c("male", "female", "other")
