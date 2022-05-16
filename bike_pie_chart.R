@@ -23,4 +23,3 @@ labels <- c("male", "female", "other")
 pie(slices, labels = labels, main="Bike riders", col= c("darkblue", "lightblue", "darkorange"))
 
 #
-
