@@ -21,5 +21,3 @@ write.csv(wide,paste0(dirname(current_path), "/bike_data_wide.csv"))
 slices <- c(sum(wide$member_gender=="Male"), sum(wide$member_gender=="Female"), sum (wide$member_gender != "Female" & wide$member_gender != "Male"  & wide$member_gender != "" ) )
 labels <- c("male", "female", "other")
 pie(slices, labels = labels, main="Bike riders", col= c("darkblue", "lightblue", "darkorange"))
-
-#
